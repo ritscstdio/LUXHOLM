@@ -1,0 +1,43 @@
+/* story.css */
+
+body {
+    line-height: 1.6;
+    padding: 0;
+}
+
+.story {
+    margin-left: 50px;
+    margin-right: 100px;
+    padding: 10px;
+    border-left: 3px solid #ccc;
+}
+
+.story h1 {
+    font-size: 24px;
+    color: black;
+}
+
+.story h2 {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+.story p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.story .lessons {
+    margin-top: 20px;
+}
+
+.story .lesson {
+    margin-bottom: 20px;
+}
+
+.story .team-signature {
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: right;
+}

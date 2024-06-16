@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.checkout-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+}
+
+.back-to-cart {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    z-index: 2; /* Set a higher z-index value */
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-cart:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.checkout-left, .checkout-right {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.checkout-right {
+    width: 600px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.paypal-button {
+    display: block;
+    width: 100%;
+    background-color: #ffc439;
+    color: #333;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.paypal-button:hover {
+    background-color: #e0a800;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #666;
+    position: relative;
+}
+
+.or-divider::before, .or-divider::after {
+    content: '';
+    display: inline-block;
+    width: 45%;
+    height: 1px;
+    background-color: #ddd;
+    vertical-align: middle;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0 10px 0 0;
+}
+
+.pay-button {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+    background-color: #555;
+}
+
+.order-summary {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.item, .shipping, .total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item-price, .shipping-price, .total-price {
+    font-weight: bold;
+}
+
+.tax-info {
+    text-align: right;
+    color: #999;
+}
+
+/* CSS FOR TABLE */
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+.cart-table th,
+.cart-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+.cart-table th {
+    font-weight: bold;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+.product-details img {
+    width: 80px;
+    margin-right: 1rem;
+}
+.product-details div p {
+    margin: 0.2rem 0;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+.quantity-control input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 0.5rem;
+}
+
+.quantity {
+    margin: 0 10px; /* Adjust this value as needed */
+}
+.checkout-right {
+    width: 400px;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    background: #f9f9f9;
+    padding: 30px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Set a lower z-index value */
+}
+
+.checkout-right::before {
+    content: '';
+    position: absolute;
+    top: 0; /* Position it at the top of the .checkout-right */
+    left: 0;
+    width: 100%;
+    height: 20px; /* Adjust the height to match your wavy line image */
+    background-image: url('path/to/your/wavy-line-image.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.Payment-method {
+    margin-bottom: 20px;
+}
+
+.Payment-method label {
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+}
+
+#payment-select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+#payment-select:focus {
+    outline: none;
+    border-color: #888;
+}

@@ -1,0 +1,16 @@
+Options -Indexes
+
+# Enable RewriteEngine
+RewriteEngine On
+
+# If the requested filename is not an existing file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# If the requested filename is not an existing directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite URLs to PHP files
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Set default charset to UTF-8
+AddDefaultCharset UTF-8

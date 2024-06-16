@@ -1,0 +1,43 @@
+html {
+    overflow: overlay; /* Allows the scrollbar to overlay content */
+}
+
+/* Scrollbar size */
+/* This sets the width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    transition: 1.0s; /* Adds a transition effect to the scrollbar */
+}
+
+/* This styles the thumb of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.6); /* Background color of the thumb */
+    background-clip: padding-box; /* Specifies the painting area of the background */
+    border: 2px solid transparent; /* Border of the thumb */
+    border-radius: 5px; /* Border radius of the thumb */
+    transition: 1.0s; /* Adds a transition effect to the thumb */
+}
+
+/* This styles the thumb when hovered */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgb(0, 0, 0); /* Background color of the thumb on hover */
+    transition: 0.3s; /* Adds a transition effect to the hover */
+}
+
+/* This styles the track of the scrollbar */
+::-webkit-scrollbar-track {
+    background-color: rgba(239, 239, 239, 0.737); /* Background color of the track */
+}
+
+/* This styles the thumb when active (clicked) */
+::-webkit-scrollbar-thumb:vertical:active,
+::-webkit-scrollbar-thumb:horizontal:active {
+    background: rgb(0, 0, 0); /* Background color of the thumb when active */
+}
+
+/* This styles the corner of the scrollbar */
+::-webkit-scrollbar-corner {
+    background: none; /* Background of the scrollbar corner */
+}

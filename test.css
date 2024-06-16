@@ -1,0 +1,48 @@
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+.cart-table th,
+.cart-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+.cart-table th {
+    font-weight: bold;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+.product-details img {
+    width: 80px;
+    margin-right: 1rem;
+}
+.product-details div p {
+    margin: 0.2rem 0;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+.quantity-control input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 0.5rem;
+}
+
+.quantity {
+    margin: 0 10px; /* Adjust this value as needed */
+}
